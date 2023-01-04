@@ -1,0 +1,31 @@
+mixin draft-section()
+
+  section.draft
+    .draft__slider
+      .swiper-wrapper.draft__wrapper
+        .swiper-slide.draft__slide
+          .draft__content
+            .draft__header Tony's Kitchen
+            .draft__subheader Санкт-Петербург
+          +img('content', 'flat', 'jpg')
+        .swiper-slide.draft__slide
+          .draft__content
+            .draft__header Tony's Kitchen
+            .draft__subheader Санкт-Петербург
+          +img('content', 'flat', 'jpg')
+        .swiper-slide.draft__slide
+          .draft__content
+            .draft__header Tony's Kitchen
+            .draft__subheader Санкт-Петербург
+          +img('content', 'flat', 'jpg')
+        .swiper-slide.draft__slide
+          .draft__content
+            .draft__header Tony's Kitchen
+            .draft__subheader Санкт-Петербург
+          +img('content', 'flat', 'jpg')
+      .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal.draft__pagination
+      .draft__buttons
+        button.draft__btn.draft__btn--prev
+          +icn('icn-arrow', 20, 28).draft__icn
+        button.draft__btn.draft__btn--next
+          +icn('icn-arrow', 20, 28).draft__icn

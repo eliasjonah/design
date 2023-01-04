@@ -11,6 +11,10 @@ a {
   }
 }
 
+.page {
+  font-family: $font-default;
+}
+
 .width {
   width: 100%;
   max-width: $width + (20px * 2);

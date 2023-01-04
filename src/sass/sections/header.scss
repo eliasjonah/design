@@ -1,3 +1,115 @@
 .header {
 
+  &__inner {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+  }
+
+  &__nav-item {
+    @include font-size(12px, 16px);
+    font-weight: 500;
+    color: $color-black;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: color $trans-base, opacity $trans-base;
+
+    &:hover {
+      color: $color-main-dark;
+    }
+
+    &:active{
+      opacity: 0.6;
+    }
+  }
+
+  &__aside {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+  }
+
+  &__offer {
+    @include font-size(12px, 16px);
+    font-weight: 600;
+    color: $color-main;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: color $trans-base, opacity $trans-base;
+
+    &:hover {
+      color: $color-main;
+    }
+
+    &:active{
+      opacity: 0.6;
+    }
+  }
+
+  &__burger {
+    position: relative;
+    height: 8px;
+    width: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    gap: 4px;
+    z-index: 2;
+  }
+
+  &__burger:hover &__burger-line {
+    background-color: $color-main-dark;
+  }
+
+  &__burger:active &__burger-line {
+    opacity: 0.6;
+  }
+
+  &__burger-line {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: $color-main;
+    transition: all $trans-base;
+
+    &:first-child{
+      top: 0px;
+    }
+    &:last-child{
+      bottom: 0px;
+    }
+  }
+
+  &__burger.clicked &__burger-line {
+
+    &:first-child{
+      top: 2px;
+      transform:rotate(45deg);
+    }
+    &:last-child{
+      bottom: 4px;
+      transform:rotate(-45deg);
+    }
+  }
+
+  // Media
+
+  @media (max-width: 1199px) {
+    &__inner {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
 }

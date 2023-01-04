@@ -1,2 +1,25 @@
 mixin footer(footerMods)
   footer.footer
+    .container-xl
+      .footer__inner
+        .footer__connect
+          .footer__contact
+            h3.footer__header Как с нами связаться?
+            .footer__group
+              .footer__item
+                .footer__subheader Адрес
+                .footer__info Санкт-Петербург, ул. Льва Толстого, 9
+              .footer__item
+                .footer__subheader Контакты
+                .footer__info 8 800 500-51-99 mail@example.com
+              .footer__item
+                .footer__subheader Режим работы
+                .footer__info.footer__info--long Каждый день, с 10:00 до 19:00
+          .footer__map
+            +img('content', 'map', 'jpg')
+    .footer__bottom
+      .container-xl
+        .footer__foot
+          a(href="#").logo Logo
+          a(href="#").footer__link Политика конфиденциальности
+          a(href="#").footer__link NETCATS

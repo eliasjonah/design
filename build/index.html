@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content=""><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"><!-- CSS only -->
+    <link rel="stylesheet" href="css/style.css?1672831349241">
+  </head>
+  <body>
+    <noscript>
+      <div class="noscript">JavaScript must be enabled for the site to function properly!</div>
+    </noscript>
+    <script>
+      (() => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', './img/sprite.svg', true);
+        xhr.send();
+        xhr.onload = function() {
+          var div = document.createElement('div');
+          div.className = 'visually-hidden';
+          div.innerHTML = xhr.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+        }
+      })();
+      
+    </script>
+    <div class="page">
+      <div class="page__core">
+        <header class="header">
+          <div class="container-xl">
+            <div class="header__inner"><a class="logo" href="#">Logo</a>
+              <div class="header__nav"><a class="header__nav-item" href="#">ОТЕЛИ</a><a class="header__nav-item" href="#">РЕСТОРАНЫ</a><a class="header__nav-item" href="#">ЧАСТНЫЕ ИНТЕРЬЕРЫ</a><a class="header__nav-item" href="#">КАТАЛОГ</a></div>
+              <div class="header__aside"><a class="header__offer" href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+                <div class="header__burger">
+                  <div class="header__burger-line"></div>
+                  <div class="header__burger-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="tagline">
+          <div class="container-xl">
+            <div class="tagline__inner">
+              <div class="tagline__content">
+                <h1 class="tagline__header">Комплексная реализация интерьерных задач</h1><a class="tagline__link" href="#">Оставить заявку</a>
+              </div><a class="tagline__btn" href="#">
+                <svg class="icn tagline__icn" width="20" height="28" aria-hidden="true">
+                  <use xlink:href="#icn-arrow"></use>
+                </svg></a>
+            </div>
+          </div>
+        </section>
+        <section class="draft">
+          <div class="draft__slider">
+            <div class="swiper-wrapper draft__wrapper">
+              <div class="swiper-slide draft__slide">
+                <div class="draft__content">
+                  <div class="draft__header">Tony's Kitchen</div>
+                  <div class="draft__subheader">Санкт-Петербург</div>
+                </div><img src="./img/content/flat.jpg" srcset="img/content/flat@2x.jpg 2x">
+              </div>
+              <div class="swiper-slide draft__slide">
+                <div class="draft__content">
+                  <div class="draft__header">Tony's Kitchen</div>
+                  <div class="draft__subheader">Санкт-Петербург</div>
+                </div><img src="./img/content/flat.jpg" srcset="img/content/flat@2x.jpg 2x">
+              </div>
+              <div class="swiper-slide draft__slide">
+                <div class="draft__content">
+                  <div class="draft__header">Tony's Kitchen</div>
+                  <div class="draft__subheader">Санкт-Петербург</div>
+                </div><img src="./img/content/flat.jpg" srcset="img/content/flat@2x.jpg 2x">
+              </div>
+              <div class="swiper-slide draft__slide">
+                <div class="draft__content">
+                  <div class="draft__header">Tony's Kitchen</div>
+                  <div class="draft__subheader">Санкт-Петербург</div>
+                </div><img src="./img/content/flat.jpg" srcset="img/content/flat@2x.jpg 2x">
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal draft__pagination"></div>
+            <div class="draft__buttons">
+              <button class="draft__btn draft__btn--prev">
+                <svg class="icn draft__icn" width="20" height="28" aria-hidden="true">
+                  <use xlink:href="#icn-arrow"></use>
+                </svg>
+              </button>
+              <button class="draft__btn draft__btn--next">
+                <svg class="icn draft__icn" width="20" height="28" aria-hidden="true">
+                  <use xlink:href="#icn-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="basic">
+          <div class="container-xl">
+            <div class="basic__inner">
+              <div class="basic__content">
+                <h2 class="basic__header">Наши основные направления</h2>
+              </div>
+              <div class="basic__slider">
+                <div class="swiper-wrapper basic__wrapper"><a class="swiper-slide basic__slide">
+                    <div class="basic__img"><img src="./img/content/basic.jpg" srcset="img/content/basic@2x.jpg 2x">
+                    </div>
+                    <div class="basic__name">Отели</div>
+                    <div class="basic__tagline">От 2 до 5 звезд</div></a><a class="swiper-slide basic__slide">
+                    <div class="basic__img"><img src="./img/content/basic.jpg" srcset="img/content/basic@2x.jpg 2x">
+                    </div>
+                    <div class="basic__name">Отели</div>
+                    <div class="basic__tagline">От 2 до 5 звезд</div></a><a class="swiper-slide basic__slide">
+                    <div class="basic__img"><img src="./img/content/basic.jpg" srcset="img/content/basic@2x.jpg 2x">
+                    </div>
+                    <div class="basic__name">Отели</div>
+                    <div class="basic__tagline">От 2 до 5 звезд</div></a><a class="swiper-slide basic__slide">
+                    <div class="basic__img"><img src="./img/content/basic.jpg" srcset="img/content/basic@2x.jpg 2x">
+                    </div>
+                    <div class="basic__name">Отели</div>
+                    <div class="basic__tagline">От 2 до 5 звезд</div></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/libs.js"></script>
+<script src="js/main.js"></script>

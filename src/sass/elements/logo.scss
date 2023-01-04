@@ -1,9 +1,17 @@
 .logo {
-  display: inline-block;
-  vertical-align: top;
-  background: url('#{$url-img}/gulp.svg') no-repeat 0 0;
-  background-size: 48px 48px;
-  text-indent: 100%;
-  overflow: hidden;
-  white-space: nowrap;
+  color: $color-main;
+  text-decoration: none;
+  outline: none;
+  @include font-size(16px, 16px);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color $trans-base, opacity $trans-base;
+
+  &:hover {
+    color: $color-main;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
 }
