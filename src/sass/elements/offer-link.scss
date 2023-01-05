@@ -1,0 +1,35 @@
+.offer-link {
+  display: inline-block;
+  position: relative;
+  color: $color-main;
+  text-decoration: none;
+  outline: none;
+  @include font-size(20px, 24px);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color $trans-base, opacity $trans-base;
+
+  &:hover {
+    color: $color-main-dark;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background-color: $color-main;
+    right: -32%;
+    top: 50%;
+    transition: background-color $trans-base;
+  }
+
+  &:hover::after {
+    background-color: $color-main-dark;
+  }
+}

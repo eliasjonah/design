@@ -1,7 +1,7 @@
 .tagline {
 
   &__inner {
-    padding: 64px 0 80px 0;
+    padding: 128px 0 80px 0;
   }
 
   &__content {
@@ -14,36 +14,6 @@
     margin-bottom: 40px;
     @include font-size(72px, 78px);
     font-weight: 500;
-  }
-
-  &__link {
-    position: relative;
-    color: $color-main;
-    text-decoration: none;
-    outline: none;
-    @include font-size(20px, 24px);
-    font-weight: 500;
-    cursor: pointer;
-    transition: color $trans-base, opacity $trans-base;
-
-    &:hover {
-      color: $color-main;
-    }
-
-    &:active{
-      opacity: 0.6;
-    }
-
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 32px;
-      height: 2px;
-      background-color: $color-main;
-      right: -32%;
-      top: 50%;
-    }
   }
 
   &__btn {

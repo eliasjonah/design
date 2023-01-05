@@ -1,3 +1,85 @@
 .basic {
+  padding-top: 64px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__header {
+    margin-bottom: 0;
+    @include font-size(28px, 32px);
+    font-weight: 600;
+  }
+
+  &__slider {
+    overflow-x: hidden;
+  }
+
+  &__slide {
+    display: block;
+    text-decoration: none;
+    outline: none;
+  }
+
+  &__img {
+    margin-bottom: 24px;
+    max-width: 289px;
+    max-height: 427px;
+    height: 100%;
+    width: 100%;
+    background-color: $color-main;
+    transition: background-color $trans-base;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: opacity $trans-base;
+    }
+  }
+
+  &__slide:hover &__img img {
+    opacity: 0.7;
+  }
+
+  &__slide:active &__img {
+    background-color: $color-muted;
+  }
+
+  &__name {
+    @include font-size(16px, 24px);
+    font-weight: 400;
+    color: $color-black;
+    transition: color $trans-base, opacity $trans-base;
+  }
+
+  &__slide:hover &__name {
+    color: $color-main;
+  }
+
+  &__slide:active &__name {
+    opacity: 0.7;
+  }
+
+  &__tagline {
+    font-family: 'Spectral';
+    font-style: italic;
+    font-weight: 300;
+    color: $color-black;
+  }
+
+  &__slide:hover &__tagline {
+    color: $color-black;
+  }
+
+  &__slide:active &__tagline {
+    opacity: 0.7;
+  }
 }

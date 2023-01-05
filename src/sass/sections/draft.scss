@@ -1,9 +1,11 @@
 .draft {
   display: block;
   overflow-x: hidden;
+  padding-top: 62px;
+  height: 100vh;
 
   &__slider {
-    height: 100vh;
+    height: 100%;
     position: relative;
   }
 

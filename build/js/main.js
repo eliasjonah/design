@@ -94,7 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_scroll_width__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/scroll-width */ \"./js/utils/scroll-width.js\");\n/* harmony import */ var _utils_ios_vh_fix__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/ios-vh-fix */ \"./js/utils/ios-vh-fix.js\");\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/burger */ \"./js/modules/burger.js\");\n/* harmony import */ var _modules_draft_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/draft-slider */ \"./js/modules/draft-slider.js\");\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', () => {\n  Object(_utils_scroll_width__WEBPACK_IMPORTED_MODULE_0__[\"setScrollWidth\"])();\n  Object(_utils_ios_vh_fix__WEBPACK_IMPORTED_MODULE_1__[\"iosVhFix\"])();\n});\n\n// в load следует добавить скрипты, не участвующие в работе первого экрана\nwindow.addEventListener('load', () => {\n  Object(_modules_burger__WEBPACK_IMPORTED_MODULE_2__[\"burger\"])();\n  Object(_modules_draft_slider__WEBPACK_IMPORTED_MODULE_3__[\"draftSlider\"])();\n});\n\n//# sourceURL=webpack:///./js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_scroll_width__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/scroll-width */ \"./js/utils/scroll-width.js\");\n/* harmony import */ var _utils_ios_vh_fix__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/ios-vh-fix */ \"./js/utils/ios-vh-fix.js\");\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/burger */ \"./js/modules/burger.js\");\n/* harmony import */ var _modules_draft_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/draft-slider */ \"./js/modules/draft-slider.js\");\n/* harmony import */ var _modules_basic_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/basic-slider */ \"./js/modules/basic-slider.js\");\n/* harmony import */ var _modules_products_slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/products-slider */ \"./js/modules/products-slider.js\");\n\n\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', () => {\n  Object(_utils_scroll_width__WEBPACK_IMPORTED_MODULE_0__[\"setScrollWidth\"])();\n  Object(_utils_ios_vh_fix__WEBPACK_IMPORTED_MODULE_1__[\"iosVhFix\"])();\n});\n\n// в load следует добавить скрипты, не участвующие в работе первого экрана\nwindow.addEventListener('load', () => {\n  Object(_modules_burger__WEBPACK_IMPORTED_MODULE_2__[\"burger\"])();\n  Object(_modules_draft_slider__WEBPACK_IMPORTED_MODULE_3__[\"draftSlider\"])();\n  Object(_modules_basic_slider__WEBPACK_IMPORTED_MODULE_4__[\"basicSlider\"])();\n  Object(_modules_products_slider__WEBPACK_IMPORTED_MODULE_5__[\"productsSlider\"])();\n});\n\n//# sourceURL=webpack:///./js/main.js?");
+
+/***/ }),
+
+/***/ "./js/modules/basic-slider.js":
+/*!************************************!*\
+  !*** ./js/modules/basic-slider.js ***!
+  \************************************/
+/*! exports provided: basicSlider */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"basicSlider\", function() { return basicSlider; });\nfunction basicSlider() {\n  // eslint-disable-next-line no-unused-vars\n  const swiper = new Swiper('.basic__slider', {\n    centeredSlides: true,\n    loop: true,\n    speed: 1500,\n    slidesPerView: '3',\n    spaceBetween: 20,\n    autoplay: {\n      delay: 4000,\n      disableOnInteraction: false\n    }\n  });\n}\n\n\n//# sourceURL=webpack:///./js/modules/basic-slider.js?");
 
 /***/ }),
 
@@ -119,6 +131,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"draftSlider\", function() { return draftSlider; });\nfunction draftSlider() {\n  // eslint-disable-next-line no-unused-vars\n  const swiper = new Swiper('.draft__slider', {\n    centeredSlides: true,\n    loop: true,\n    speed: 1500,\n    autoplay: {\n      delay: 4000,\n      disableOnInteraction: false\n    },\n    pagination: {\n      el: '.swiper-pagination',\n      type: 'fraction'\n    },\n    navigation: {\n      nextEl: '.draft__btn--next',\n      prevEl: '.draft__btn--prev'\n    }\n  });\n}\n\n\n//# sourceURL=webpack:///./js/modules/draft-slider.js?");
+
+/***/ }),
+
+/***/ "./js/modules/products-slider.js":
+/*!***************************************!*\
+  !*** ./js/modules/products-slider.js ***!
+  \***************************************/
+/*! exports provided: productsSlider */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"productsSlider\", function() { return productsSlider; });\nfunction productsSlider() {\n  // eslint-disable-next-line no-unused-vars\n  const swiper = new Swiper('.products__slider', {\n    loop: true,\n    speed: 1500,\n    slidesPerView: '4',\n    spaceBetween: 20,\n    autoplay: {\n      delay: 3000,\n      disableOnInteraction: false\n    },\n    pagination: {\n      el: '.products__pagination',\n      clickable: true\n    }\n  });\n}\n\n\n//# sourceURL=webpack:///./js/modules/products-slider.js?");
 
 /***/ }),
 

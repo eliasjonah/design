@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"><!-- CSS only -->
-    <link rel="stylesheet" href="css/style.css?1672831349241">
+    <link rel="stylesheet" href="css/style.css?1672928613743">
   </head>
   <body>
     <noscript>
@@ -48,15 +48,15 @@
           <div class="container-xl">
             <div class="tagline__inner">
               <div class="tagline__content">
-                <h1 class="tagline__header">Комплексная реализация интерьерных задач</h1><a class="tagline__link" href="#">Оставить заявку</a>
-              </div><a class="tagline__btn" href="#">
+                <h1 class="tagline__header">Комплексная реализация интерьерных задач</h1><a class="offer-link" href="#">Оставить заявку</a>
+              </div><a class="tagline__btn" href="#section2">
                 <svg class="icn tagline__icn" width="20" height="28" aria-hidden="true">
                   <use xlink:href="#icn-arrow"></use>
                 </svg></a>
             </div>
           </div>
         </section>
-        <section class="draft">
+        <section class="draft" id="section2">
           <div class="draft__slider">
             <div class="swiper-wrapper draft__wrapper">
               <div class="swiper-slide draft__slide">
@@ -101,28 +101,59 @@
         </section>
         <section class="basic">
           <div class="container-xl">
-            <div class="basic__inner">
-              <div class="basic__content">
+            <div class="row">
+              <div class="basic__content col-3">
                 <h2 class="basic__header">Наши основные направления</h2>
               </div>
-              <div class="basic__slider">
-                <div class="swiper-wrapper basic__wrapper"><a class="swiper-slide basic__slide">
-                    <div class="basic__img"><img src="./img/content/basic.jpg" srcset="img/content/basic@2x.jpg 2x">
-                    </div>
-                    <div class="basic__name">Отели</div>
-                    <div class="basic__tagline">От 2 до 5 звезд</div></a><a class="swiper-slide basic__slide">
-                    <div class="basic__img"><img src="./img/content/basic.jpg" srcset="img/content/basic@2x.jpg 2x">
-                    </div>
-                    <div class="basic__name">Отели</div>
-                    <div class="basic__tagline">От 2 до 5 звезд</div></a><a class="swiper-slide basic__slide">
-                    <div class="basic__img"><img src="./img/content/basic.jpg" srcset="img/content/basic@2x.jpg 2x">
-                    </div>
-                    <div class="basic__name">Отели</div>
-                    <div class="basic__tagline">От 2 до 5 звезд</div></a><a class="swiper-slide basic__slide">
-                    <div class="basic__img"><img src="./img/content/basic.jpg" srcset="img/content/basic@2x.jpg 2x">
-                    </div>
-                    <div class="basic__name">Отели</div>
-                    <div class="basic__tagline">От 2 до 5 звезд</div></a></div>
+              <div class="basic__aside col-9">
+                <div class="basic__slider">
+                  <div class="swiper-wrapper basic__wrapper"><a class="swiper-slide basic__slide" href="#">
+                      <div class="basic__img"><img src="./img/content/basic.jpg" srcset="img/content/basic@2x.jpg 2x">
+                      </div>
+                      <div class="basic__name">Отели</div>
+                      <div class="basic__tagline">От 2 до 5 звезд</div></a><a class="swiper-slide basic__slide" href="#">
+                      <div class="basic__img"><img src="./img/content/basic.jpg" srcset="img/content/basic@2x.jpg 2x">
+                      </div>
+                      <div class="basic__name">Отели</div>
+                      <div class="basic__tagline">От 2 до 5 звезд</div></a><a class="swiper-slide basic__slide" href="#">
+                      <div class="basic__img"><img src="./img/content/basic.jpg" srcset="img/content/basic@2x.jpg 2x">
+                      </div>
+                      <div class="basic__name">Отели</div>
+                      <div class="basic__tagline">От 2 до 5 звезд</div></a><a class="swiper-slide basic__slide" href="#">
+                      <div class="basic__img"><img src="./img/content/basic.jpg" srcset="img/content/basic@2x.jpg 2x">
+                      </div>
+                      <div class="basic__name">Отели</div>
+                      <div class="basic__tagline">От 2 до 5 звезд</div></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products">
+          <div class="container-xl">
+            <div class="products__inner">
+              <div class="row">
+                <div class="products__content col-md-8 offset-md-3">
+                  <h2 class="products__header">Мы комплектуем отели различного уровня, апарт-отели, хостелы, базы отдыха, кинотеатры, рестораны и бары</h2><a class="offer-link" href="#">О компании</a>
+                </div>
+                <div class="products__items col-md-12">
+                  <div class="products__slider">
+                    <div class="swiper-wrapper products__wrapper"><a class="swiper-slide products__slide" href="#">
+                        <div class="products__img"><img src="./img/content/sofa.png" srcset="img/content/sofa@2x.png 2x">
+                          <div class="products__name">Мягкая мебель</div>
+                        </div></a><a class="swiper-slide products__slide" href="#">
+                        <div class="products__img"><img src="./img/content/sofa.png" srcset="img/content/sofa@2x.png 2x">
+                        </div>
+                        <div class="products__name">Корпусная мебель</div></a><a class="swiper-slide products__slide" href="#">
+                        <div class="products__img"><img src="./img/content/sofa.png" srcset="img/content/sofa@2x.png 2x">
+                        </div>
+                        <div class="products__name">Шторы, текстиль</div></a><a class="swiper-slide products__slide" href="#">
+                        <div class="products__img"><img src="./img/content/sofa.png" srcset="img/content/sofa@2x.png 2x">
+                        </div>
+                        <div class="products__name products__name--long">Барные и ресепшн стойки</div></a></div>
+                    <div class="products__pagination"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

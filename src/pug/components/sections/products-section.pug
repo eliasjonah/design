@@ -1,0 +1,29 @@
+mixin products-section()
+
+  section.products
+    .container-xl
+      .products__inner
+        .row
+          .products__content.col-md-8.offset-md-3
+            h2.products__header Мы комплектуем отели различного уровня, апарт-отели, хостелы, базы отдыха, кинотеатры, рестораны и бары
+            a(href="#").offer-link О компании
+          .products__items.col-md-12
+            .products__slider
+              .swiper-wrapper.products__wrapper
+                a(href="#").swiper-slide.products__slide
+                  .products__img
+                    +img('content', 'sofa', 'png')
+                    .products__name Мягкая мебель
+                a(href="#").swiper-slide.products__slide
+                  .products__img
+                    +img('content', 'sofa', 'png')
+                  .products__name Корпусная мебель
+                a(href="#").swiper-slide.products__slide
+                  .products__img
+                    +img('content', 'sofa', 'png')
+                  .products__name Шторы, текстиль
+                a(href="#").swiper-slide.products__slide
+                  .products__img
+                    +img('content', 'sofa', 'png')
+                  .products__name.products__name--long Барные и ресепшн стойки
+              .products__pagination
