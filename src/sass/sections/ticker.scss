@@ -1,0 +1,58 @@
+.ticker {
+  padding-top: 64px;
+  height: 100vh;
+
+  &__inner {
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
+
+  &__header {
+    margin-bottom: 80px;
+    @include font-size(48px, 52px);
+    font-weight: 500;
+  }
+
+  &__container {
+    margin-bottom: 24px;
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 88px;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    position: absolute;
+    white-space: nowrap;
+    display: flex;
+    will-change: transform;
+    animation: marqueeLeft 32s linear infinite;
+
+    &--right {
+      animation: marqueeRight 32s linear infinite;
+    }
+  }
+
+  &__content {
+    display: block;
+    font-family: 'Spectral';
+    @include font-size(80px, 88px);
+    font-weight: 300;
+  }
+
+  @keyframes marqueeLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  @keyframes marqueeRight {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+  }
+}
