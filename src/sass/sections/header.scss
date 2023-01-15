@@ -203,4 +203,37 @@
       display: none;
     }
   }
+
+  @media (max-width: 480px) {
+    &__popup.active {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    &__links {
+      margin: 0 20px;
+    }
+
+    &__link {
+      @include font-size(32px, 32px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__link {
+      @include font-size(36px, 36px);
+    }
+  }
+
+  @media (max-width: 410px) {
+    &__link {
+      @include font-size(32px, 32px);
+    }
+  }
+
+  @media (max-width: 375px) {
+    &__link {
+      @include font-size(30px, 30px);
+    }
+  }
 }
