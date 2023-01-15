@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_scroll_width__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/scroll-width */ \"./js/utils/scroll-width.js\");\n/* harmony import */ var _utils_ios_vh_fix__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/ios-vh-fix */ \"./js/utils/ios-vh-fix.js\");\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/burger */ \"./js/modules/burger.js\");\n/* harmony import */ var _modules_draft_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/draft-slider */ \"./js/modules/draft-slider.js\");\n/* harmony import */ var _modules_basic_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/basic-slider */ \"./js/modules/basic-slider.js\");\n/* harmony import */ var _modules_products_slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/products-slider */ \"./js/modules/products-slider.js\");\n\n\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', () => {\n  Object(_utils_scroll_width__WEBPACK_IMPORTED_MODULE_0__[\"setScrollWidth\"])();\n  Object(_utils_ios_vh_fix__WEBPACK_IMPORTED_MODULE_1__[\"iosVhFix\"])();\n});\n\n// в load следует добавить скрипты, не участвующие в работе первого экрана\nwindow.addEventListener('load', () => {\n  Object(_modules_burger__WEBPACK_IMPORTED_MODULE_2__[\"burger\"])();\n  Object(_modules_draft_slider__WEBPACK_IMPORTED_MODULE_3__[\"draftSlider\"])();\n  Object(_modules_basic_slider__WEBPACK_IMPORTED_MODULE_4__[\"basicSlider\"])();\n  Object(_modules_products_slider__WEBPACK_IMPORTED_MODULE_5__[\"productsSlider\"])();\n});\n\n//# sourceURL=webpack:///./js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_scroll_width__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/scroll-width */ \"./js/utils/scroll-width.js\");\n/* harmony import */ var _utils_ios_vh_fix__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/ios-vh-fix */ \"./js/utils/ios-vh-fix.js\");\n/* harmony import */ var _modules_header_popup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/header-popup */ \"./js/modules/header-popup.js\");\n/* harmony import */ var _modules_draft_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/draft-slider */ \"./js/modules/draft-slider.js\");\n/* harmony import */ var _modules_basic_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/basic-slider */ \"./js/modules/basic-slider.js\");\n/* harmony import */ var _modules_products_slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/products-slider */ \"./js/modules/products-slider.js\");\n\n\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', () => {\n  Object(_utils_scroll_width__WEBPACK_IMPORTED_MODULE_0__[\"setScrollWidth\"])();\n  Object(_utils_ios_vh_fix__WEBPACK_IMPORTED_MODULE_1__[\"iosVhFix\"])();\n});\n\n// в load следует добавить скрипты, не участвующие в работе первого экрана\nwindow.addEventListener('load', () => {\n  Object(_modules_header_popup__WEBPACK_IMPORTED_MODULE_2__[\"headerPopup\"])();\n  Object(_modules_draft_slider__WEBPACK_IMPORTED_MODULE_3__[\"draftSlider\"])();\n  Object(_modules_basic_slider__WEBPACK_IMPORTED_MODULE_4__[\"basicSlider\"])();\n  Object(_modules_products_slider__WEBPACK_IMPORTED_MODULE_5__[\"productsSlider\"])();\n});\n\n//# sourceURL=webpack:///./js/main.js?");
 
 /***/ }),
 
@@ -110,18 +110,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "./js/modules/burger.js":
-/*!******************************!*\
-  !*** ./js/modules/burger.js ***!
-  \******************************/
-/*! exports provided: burger */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"burger\", function() { return burger; });\nfunction burger() {\n  document.querySelector(\".header__burger\").onclick = function () {\n    this.classList.toggle(\"clicked\");\n  };\n}\n\n\n//# sourceURL=webpack:///./js/modules/burger.js?");
-
-/***/ }),
-
 /***/ "./js/modules/draft-slider.js":
 /*!************************************!*\
   !*** ./js/modules/draft-slider.js ***!
@@ -131,6 +119,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"draftSlider\", function() { return draftSlider; });\nfunction draftSlider() {\n  // eslint-disable-next-line no-unused-vars\n  const swiper = new Swiper('.draft__slider', {\n    centeredSlides: true,\n    loop: true,\n    speed: 1500,\n    autoplay: {\n      delay: 4000,\n      disableOnInteraction: false\n    },\n    pagination: {\n      el: '.swiper-pagination',\n      type: 'fraction'\n    },\n    navigation: {\n      nextEl: '.draft__btn--next',\n      prevEl: '.draft__btn--prev'\n    }\n  });\n}\n\n\n//# sourceURL=webpack:///./js/modules/draft-slider.js?");
+
+/***/ }),
+
+/***/ "./js/modules/header-popup.js":
+/*!************************************!*\
+  !*** ./js/modules/header-popup.js ***!
+  \************************************/
+/*! exports provided: headerPopup */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"headerPopup\", function() { return headerPopup; });\nfunction headerPopup() {\n  const burger = document.querySelector(\".header__burger\");\n  const header = document.querySelector(\".header\");\n  const popup = document.querySelector(\".header__popup\");\n  const links = document.querySelectorAll(\".header__link\");\n  const html = document.querySelector(\"html\");\n  function showHide() {\n    const activeItems = [burger, header, popup, html];\n    activeItems.forEach(item => {\n      item.classList.toggle(\"active\");\n    });\n  }\n  burger.onclick = function () {\n    showHide();\n  };\n  links.forEach(item => {\n    item.onclick = function () {\n      showHide();\n    };\n  });\n}\n\n\n//# sourceURL=webpack:///./js/modules/header-popup.js?");
 
 /***/ }),
 

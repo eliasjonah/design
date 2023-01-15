@@ -11,6 +11,10 @@ a {
   }
 }
 
+html.active {
+  overflow-y: hidden;
+}
+
 .page {
   font-family: $font-default;
 }

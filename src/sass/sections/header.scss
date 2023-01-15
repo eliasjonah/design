@@ -3,6 +3,12 @@
   width: 100%;
   background-color: $color-gray;
   z-index: 20;
+  transition: background-color $trans-base;
+
+  &.active {
+    background-color: $color-brown;
+    transition: none;
+  }
 
   &__inner {
     padding: 24px 0;
@@ -36,6 +42,10 @@
     }
   }
 
+  &.active &__nav-item {
+    visibility: hidden;
+  }
+
   &__aside {
     display: flex;
     align-items: center;
@@ -59,6 +69,10 @@
     &:active{
       opacity: 0.6;
     }
+  }
+
+  &.active &__offer {
+    color: $color-white;
   }
 
   &__burger {
@@ -96,7 +110,7 @@
     }
   }
 
-  &__burger.clicked &__burger-line {
+  &__burger.active &__burger-line {
 
     &:first-child{
       top: 2px;
@@ -108,12 +122,85 @@
     }
   }
 
+  &__popup {
+    position: absolute;
+    margin: 0;
+    height: 100vh;
+    padding-bottom: 64px;
+    width: 100%;
+    background-color: $color-brown;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity $trans-base, visibility $trans-base;
+  }
+
+  &__popup.active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity $trans-base;
+  }
+
+  &__links {
+    max-width: 978px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+
+  &__link {
+    display: flex;
+    column-gap: 20px;
+    text-decoration: none;
+    color: $color-white;
+    @include font-size(63px, 120px);
+    font-weight: 300;
+
+    &:hover {
+      color: $color-main;
+    }
+  }
+
+  &__line {
+    display: inline-block;
+  }
+
   // Media
 
   @media (max-width: 1199px) {
     &__inner {
       margin-left: 20px;
       margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 947px) {
+    &__links {
+      flex-direction: column;
+      align-items: flex-start;
+      width: auto;
+      row-gap: 20px;
+    }
+
+    &__link {
+      @include font-size(42px, 42px);
+    }
+
+    &__line {
+      display: none;
+    }
+  }
+
+  @media (max-width: 776px) {
+    &__nav {
+      display: none;
     }
   }
 }
