@@ -39,4 +39,44 @@
     color: $color-main;
     fill: $color-transperent;
   }
+
+  // Media
+
+  @media (max-width: 1199px) {
+    &__inner {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__btn {
+      margin-top: 80px;
+      top: 0;
+    }
+  }
+
+  @media (max-width: 776px) {
+    &__header {
+      @include font-size(64px, 64px);
+    }
+  }
+
+  @media (max-width: 676px) {
+    &__header {
+      @include font-size(56px, 56px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__header {
+      @include font-size(48px, 48px);
+    }
+  }
+
+  @media (max-width: 380px) {
+    &__header {
+      @include font-size(42px, 42px);
+    }
+  }
 }

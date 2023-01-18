@@ -99,4 +99,17 @@
     color: $color-white;
     fill: $color-transperent;
   }
+
+
+  // Media
+
+  @media (max-width: 576px) {
+    &__pagination {
+      bottom: 20%;
+    }
+
+    &__content {
+      left: 5%;
+    }
+  }
 }

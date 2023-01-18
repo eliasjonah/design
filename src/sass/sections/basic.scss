@@ -82,4 +82,18 @@
   &__slide:active &__tagline {
     opacity: 0.7;
   }
+
+  // Media
+
+  @media (max-width: 992px) {
+    &__header {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__slide {
+      width: auto;
+    }
+  }
 }
