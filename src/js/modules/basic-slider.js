@@ -1,7 +1,7 @@
 function basicSlider () {
   // eslint-disable-next-line no-unused-vars
   const swiper = new Swiper('.basic__slider', {
-    // centeredSlides: true,
+    centeredSlides: true,
     loop: true,
     speed: 1500,
     slidesPerView: 'auto',
@@ -17,6 +17,7 @@ function basicSlider () {
       },
       // when window width is >= 576px
       576: {
+        centeredSlides: false,
         slidesPerView: 2,
       },
       // when window width is >= 320px

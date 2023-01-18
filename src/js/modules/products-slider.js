@@ -5,10 +5,10 @@ function productsSlider () {
     speed: 1500,
     slidesPerView: '4',
     spaceBetween: 20,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: '.products__pagination',
       clickable: true,

@@ -64,6 +64,7 @@
 
     &:hover {
       color: $color-main;
+      opacity: 0.8;
     }
 
     &:active{
@@ -162,9 +163,14 @@
     color: $color-white;
     @include font-size(63px, 120px);
     font-weight: 300;
+    transition: color $trans-base, opacity $trans-base;
 
     &:hover {
       color: $color-main;
+    }
+
+    &:active {
+      opacity: 0.6;
     }
   }
 
