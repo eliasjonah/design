@@ -1,5 +1,8 @@
 mixin error-section()
 
-  section.error-section&attributes(attributes)
-    .width
-      h1 404
+  section.error
+    .container-xl
+      .error__inner
+        .error__header ОШИБКА 404
+        .error__subheader Такой страницы не существует
+        a(href="index.html").offer-link вернуться на главную

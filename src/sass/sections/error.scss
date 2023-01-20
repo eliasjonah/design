@@ -1,0 +1,44 @@
+.error {
+  &__inner {
+    margin-top: 64px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  &__header {
+    margin-top: 200px;
+    margin-bottom: 26px;
+    @include font-size(72px, 72px);
+    font-weight: 500;
+    font-family: "Spectral";
+    color: $color-main;
+  }
+
+  &__subheader {
+    margin-bottom: 32px;
+    @include font-size(32px, 32px);
+    font-weight: 500;
+  }
+
+
+  // Media
+
+  @media (max-width: 1200px) {
+    &__inner {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 546px) {
+    &__header {
+      @include font-size(48px, 48px);
+    }
+
+    &__subheader {
+      @include font-size(26px, 26px);
+    }
+  }
+}

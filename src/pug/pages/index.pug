@@ -1,7 +1,7 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "template"
+  - const title = "Design"
   - const hasHeader = true
   - const hasFooter = true
   - const pageMods = ""
@@ -15,3 +15,6 @@ block main
   +basic-section()
   +products-section()
   +ticker-section()
+
+  if (hasFooter)
+          +footer(footerMods)
