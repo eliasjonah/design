@@ -83,7 +83,7 @@ const html = (done) => {
   .pipe(plumber())
   .pipe(fileinclude(fileInclude))
   .pipe(replace('##hash##', Date.now()))
-  // .pipe(gulpHtmlBemValidator())
+  .pipe(gulpHtmlBemValidator())
   .pipe(gulp.dest(paths.build.html))
 
   done()
@@ -242,7 +242,7 @@ const spriteMin = (done) => {
 const changeVersionToMin = (done) => {
   gulp.src('build/**/*.html')
   .pipe(replace('style.css', 'style.min.css'))
-  .pipe(replace('libs.js', 'style.min.css'))
+  .pipe(replace('libs.js', 'libs.min.js'))
   .pipe(replace('main.js', 'main.min.js'))
   .pipe(gulp.dest(paths.build.pug))
 
@@ -252,7 +252,7 @@ const changeVersionToMin = (done) => {
 
 // Watch files
 const watchFiles = (done) => {
-  // gulp.watch(paths.watch.html, gulp.series(html, reloadServer))
+  gulp.watch(paths.watch.html, gulp.series(html, reloadServer))
   gulp.watch(paths.watch.pug, gulp.series(pugToHtml, reloadServer))
   gulp.watch(paths.watch.style, styles)
   gulp.watch(paths.watch.js, gulp.series(scripts, reloadServer))
